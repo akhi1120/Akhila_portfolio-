@@ -22,7 +22,7 @@ const Projects = () => {
         "Reduced query latency with efficient indexing"
       ],
       impact: "Improved query response relevance by 40% and reduced latency significantly",
-      githubUrl: "#",
+      githubUrl: "https://github.com/akhi1120/RAG-Models-/blob/main/Rag_SQL_using_movies.ipynb",
       liveUrl: "#"
     },
     {
@@ -37,7 +37,7 @@ const Projects = () => {
         "Optimized for minimal false negatives"
       ],
       impact: "Achieved high recall performance with Random Forest, significantly reducing false negatives",
-      githubUrl: "#",
+      githubUrl: "https://github.com/akhi1120/Assignments-/blob/main/Fraud%20Detection%20.ipynb",
       liveUrl: "#"
     },
     {
@@ -52,7 +52,7 @@ const Projects = () => {
         "Enhanced text-based classification and search capabilities"
       ],
       impact: "Improved downstream NLP task accuracy through refined text preprocessing",
-      githubUrl: "#",
+      githubUrl: "https://github.com/akhi1120/NLP-",
       liveUrl: "#"
     },
     {
@@ -67,7 +67,7 @@ const Projects = () => {
         "Decision-making support for law enforcement"
       ],
       impact: "Enhanced law enforcement focus on high-net-worth counterfeit sales operations",
-      githubUrl: "#",
+      githubUrl: "https://github.com/akhi1120/ML_Projects-/blob/main/Counterfeit_Medicines_Sales_prediction_%20ML_project.ipynb",
       liveUrl: "#"
     },
     {
@@ -82,7 +82,7 @@ const Projects = () => {
         "Modular tool configuration for scalable research"
       ],
       impact: "Streamlined research workflow with high-quality automated report generation",
-      githubUrl: "#",
+      githubUrl: "https://github.com/akhi1120/Research_agentAI",
       liveUrl: "#"
     }
   ];
@@ -166,7 +166,11 @@ const Projects = () => {
 
                         {/* Action Buttons */}
                         <div className="flex space-x-4">
-                          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                          <Button 
+                            variant="outline" 
+                            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                            onClick={() => window.open(project.githubUrl, '_blank')}
+                          >
                             <Github className="w-4 h-4 mr-2" />
                             View Code
                           </Button>
@@ -185,7 +189,12 @@ const Projects = () => {
 
           {/* View More Projects */}
           <div className="text-center mt-16">
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              onClick={() => window.open('https://github.com/akhi1120', '_blank')}
+            >
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </Button>
