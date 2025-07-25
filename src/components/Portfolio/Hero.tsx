@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Download } from "lucide-react";
+import { ChevronDown, Download, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -60,10 +60,30 @@ const Hero = () => {
           <div className="h-px bg-primary w-16 ml-4"></div>
         </div>
 
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
           Passionate about leveraging AI and machine learning to drive business intelligence and decision-making. 
           Skilled in Python, deep learning, NLP, and generative AI with hands-on experience in real-world projects.
         </p>
+
+        {/* Social Links */}
+        <div className="flex items-center justify-center space-x-6 mb-12">
+          <a 
+            href="https://github.com/akhi1120" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-muted hover:bg-gradient-primary flex items-center justify-center transition-all group"
+          >
+            <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary-foreground" />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/akhila-rekulapadu-1019a12a2/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-muted hover:bg-gradient-primary flex items-center justify-center transition-all group"
+          >
+            <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary-foreground" />
+          </a>
+        </div>
 
         {/* Scroll Down Indicator */}
         <button 
